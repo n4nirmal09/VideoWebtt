@@ -1,0 +1,36 @@
+$image-path: '../images';
+$font-path: '../fonts';
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$screen-sm: 576px;
+$screen-md: 992px;
+$screen-lg: 1025px;
+$screen-xl: 1280px;
+$screen-xxl: 1440px;
+$screen-xxxl: 1620px;
+$screen-hd: 1920px;
+
+$container-max-width: 1200px;
+$container-max-width-smaller: 760px;
+$container-max-width-laptops: 1024px;
+
+
+$interactive-table-bp: $screen-sm;
+
+// Colors
+
+$blue-color: #423fae;
+$light-blue-color: #00afd2;
+$green-color: #2be9af;
+$grey-color: #bdc1cf;
+$white-color: #fff;
+$pink-color: #ff6168;
+$inner-circle-fill: #fff;
+$inner-circle-stroke: $blue-color;
+$outer-circle-stroke: $green-color;
+$bullet-color: $green-color;
+$progress-rail-color: $green-color;

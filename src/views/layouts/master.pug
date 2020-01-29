@@ -1,0 +1,53 @@
+//- Master layout
+
+doctype html
+html(lang='en')
+  head
+
+    //- Meta
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+    meta(name='msapplication-TileColor', content='#0E0E0E')
+    meta(name='theme-color', content='#0E0E0E')
+
+    //- SEO
+
+    //- Basic Seo
+    block basicSeo
+      meta(name='description' content='Index page')
+      meta(name='keywords', content='index, page')
+      meta(name='author' content='')
+
+    //- Twitter
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='')
+    meta(name='twitter:image', content='')
+    meta(name='twitter:description', content='')
+
+    //- Facebook
+    meta(property='og:url', content='')
+    meta(property='og:title', content='')
+    meta(property='og:description', content='')
+    meta(property='og:image', content='')
+    meta(property='og:type', content='website')
+
+
+    //- Favicons
+    link(rel='icon', type='image/png', sizes='32x32', href='./images/icons/favicon-32x32.png')
+
+    //- Title
+    block title
+      title Your project!
+
+  body
+    .body-container-wrapper
+      <!-- Main Block-->
+      main.main-content
+        //- block content
+        block content
+
+    //- block scripts
+    block scripts
+

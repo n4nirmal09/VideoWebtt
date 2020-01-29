@@ -1,0 +1,63 @@
+@import './base/variables',
+'./base/functions',
+'./base/mixins';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+  
+}
+
+#hero-banner {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#hero-nav {
+	display: none;
+	justify-content: center;
+	background: fade-out(#000, 0.2);
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	width: 100%;
+	
+
+	> span {
+		padding: 20px 10px;
+		font-size: 20px;
+		color: #fff;
+	}
+}
+
+#hero-video {
+	display: block;
+}
+
+.hero {
+	&__thumbnail{
+		display: block;
+    position: absolute;
+    visibility: hidden;
+    background-color: #000;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	}
+
+	&__bar {
+		display: none;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		min-height: 20px;
+	}
+	
+}
